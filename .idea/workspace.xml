@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="268965f3-1d12-4119-9d9d-53a97cf4daf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Clients/BestBuyTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Clients/BestBuy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Clients/BestBuy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Clients/StockStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Clients/StockStatus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Retailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Retailer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/TrackCommandTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/TrackCommandTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/StockTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/StockTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Stock.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Stock.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,15 +247,20 @@
     </state>
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/-268.-1080.1920.1080@0.0.1440.900" timestamp="1589629428147" />
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1589988692051" />
+    <state x="482" y="44" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1590420133804">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="482" y="44" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.23.1440.826@0.23.1440.826" timestamp="1590420133804" />
     <state x="0" y="23" width="476" height="825" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1589987626367">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="23" width="476" height="825" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1440.900@0.0.1440.900" timestamp="1589987626367" />
-    <state x="303" y="49" key="CommitChangelistDialog2" timestamp="1589635579018">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="303" y="49" key="CommitChangelistDialog2" timestamp="1590419991148">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="303" y="49" key="CommitChangelistDialog2/0.23.1440.821@0.23.1440.821" timestamp="1589635579018" />
     <state x="303" y="51" key="CommitChangelistDialog2/0.23.1440.823/-268.-1057.1920.1057@0.23.1440.823" timestamp="1589630206984" />
+    <state x="303" y="49" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1590419991148" />
     <state x="537" y="328" width="600" height="300" key="ComposerAddDependencyOutputPopupDimensionServiceKey" timestamp="1589563527350">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -307,6 +305,10 @@
     <state x="397" y="266" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1590241682225" />
     <state x="397" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1589564353289" />
     <state x="397" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1590008492361" />
+    <state x="378" y="56" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590423538541">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="378" y="56" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.826@0.23.1440.826" timestamp="1590423538541" />
     <state x="409" y="114" width="929" height="671" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1589983544216">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -321,11 +323,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1589636624512" />
-    <state x="385" y="202" width="670" height="619" key="search.everywhere.popup" timestamp="1590248585716">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="385" y="203" width="670" height="622" key="search.everywhere.popup" timestamp="1590436951879">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-268.-1080.1920.1080@0.0.1440.900" timestamp="1589903078864" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1589995552471" />
     <state x="385" y="202" width="670" height="619" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1590248585716" />
+    <state x="385" y="203" width="670" height="622" key="search.everywhere.popup/0.23.1440.826@0.23.1440.826" timestamp="1590436951879" />
   </component>
 </project>
