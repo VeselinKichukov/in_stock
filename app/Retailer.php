@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Clients\Client;
+use App\Clients\StockStatus;
 use Facades\App\Clients\ClientFactory;
 
 class Retailer extends Model
