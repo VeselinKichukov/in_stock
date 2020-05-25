@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="268965f3-1d12-4119-9d9d-53a97cf4daf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Clients/BestBuy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Clients/Client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Clients/ClientException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Clients/ClientFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Clients/StockStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Clients/Target.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Clients/BestBuyTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Clients/BestBuy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Clients/BestBuy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Clients/StockStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Clients/StockStatus.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Retailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Retailer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Stock.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Stock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/TrackCommandTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/TrackCommandTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/StockTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/StockTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,19 +155,56 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/Unit" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.BestBuyTest">
+    <configuration name="BestBuyTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.3" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Clients\BestBuyTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Clients/BestBuyTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BestBuyTest.it_tracks_a_product (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.3" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\BestBuyTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Clients/BestBuyTest.php" method="it_tracks_a_product" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BestBuyTest.it_tracks_a_product" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.3" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Clients\BestBuyTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Clients/BestBuyTest.php" method="it_tracks_a_product" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.BestBuyTest" />
+        <item itemvalue="PHPUnit.BestBuyTest.it_tracks_a_product" />
+        <item itemvalue="PHPUnit.BestBuyTest.it_tracks_a_product (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -180,6 +218,9 @@
       <updated>1589562246697</updated>
       <workItem from="1589562248729" duration="1431000" />
       <workItem from="1589564350032" duration="3661000" />
+      <workItem from="1590008492379" duration="13000" />
+      <workItem from="1590241681647" duration="3453000" />
+      <workItem from="1590398514583" duration="1875000" />
     </task>
     <servers />
   </component>
@@ -187,24 +228,36 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1589640301086">
+    <state x="368" y="70" key="#BestBuyTest" timestamp="1589988593928">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1589640301086" />
+    <state x="368" y="54" key="#BestBuyTest.it_tracks_a_product" timestamp="1589986928471">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="368" y="54" key="#BestBuyTest.it_tracks_a_product/0.0.1440.900@0.0.1440.900" timestamp="1589986928471" />
+    <state x="368" y="54" key="#BestBuyTest.it_tracks_a_product_(1)" timestamp="1589990239653">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="368" y="54" key="#BestBuyTest.it_tracks_a_product_(1)/0.0.1440.900@0.0.1440.900" timestamp="1589990239653" />
+    <state x="368" y="70" key="#BestBuyTest/0.0.1440.900@0.0.1440.900" timestamp="1589988593928" />
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1589979112945">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1589979112945" />
     <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589902341373">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/-268.-1080.1920.1080@0.0.1440.900" timestamp="1589902341373" />
     <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1589638102451" />
-    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589637786168">
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589988692051">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/-268.-1080.1920.1080@0.0.1440.900" timestamp="1589629428147" />
-    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1589637786168" />
-    <state x="0" y="0" width="476" height="900" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1589639199689">
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1589988692051" />
+    <state x="0" y="23" width="476" height="825" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1589987626367">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="0" width="476" height="900" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1440.900@0.0.1440.900" timestamp="1589639199689" />
+    <state x="0" y="23" width="476" height="825" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1440.900@0.0.1440.900" timestamp="1589987626367" />
     <state x="303" y="49" key="CommitChangelistDialog2" timestamp="1589635579018">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
@@ -219,6 +272,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="470" y="370" key="ComposerInitDialogKey/0.0.1440.900@0.0.1440.900" timestamp="1589563174232" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1589995087597">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1589995087597" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1589995087595">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1589995087595" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1589995087594">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1589995087594" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1589995087596">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1589995087596" />
     <state x="497" y="273" key="NewPhpClassDialog" timestamp="1589902506774">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -228,23 +297,35 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="460" y="262" width="542" height="375" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1440.900@0.0.1440.900" timestamp="1589564261834" />
-    <state x="397" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1589564353289">
-      <screen x="0" y="23" width="1440" height="821" />
-    </state>
-    <state x="397" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1589564353289" />
-    <state x="378" y="207" width="683" height="486" key="find.popup" timestamp="1589902005302">
+    <state x="570" y="373" key="VCS.ChangelistChooser" timestamp="1589987607095">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="570" y="373" key="VCS.ChangelistChooser/0.0.1440.900@0.0.1440.900" timestamp="1589987607095" />
+    <state x="397" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1590241682225">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="397" y="266" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1590241682225" />
+    <state x="397" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1589564353289" />
+    <state x="397" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1590008492361" />
+    <state x="409" y="114" width="929" height="671" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1589983544216">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="409" y="114" width="929" height="671" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1440.900@0.0.1440.900" timestamp="1589983544216" />
+    <state x="378" y="212" width="683" height="486" key="find.popup" timestamp="1590248115782">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
     <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900/-268.-1080.1920.1080@0.0.1440.900" timestamp="1589902005302" />
-    <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1589567707309" />
+    <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1589995431228" />
+    <state x="378" y="212" width="683" height="486" key="find.popup/0.23.1440.823@0.23.1440.823" timestamp="1590248115782" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1589636624512">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1589636624512" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1589903078864">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="385" y="202" width="670" height="619" key="search.everywhere.popup" timestamp="1590248585716">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-268.-1080.1920.1080@0.0.1440.900" timestamp="1589903078864" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1589896504410" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1589995552471" />
+    <state x="385" y="202" width="670" height="619" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1590248585716" />
   </component>
 </project>
