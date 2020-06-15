@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\UseCases\TrackStock;
 use Illuminate\Database\Eloquent\Model;
 
 class Stock extends Model
@@ -12,18 +13,9 @@ class Stock extends Model
         'in_stock' => 'boolean'
     ];
 
-    public function track($callback = null)
+    public function track()
     {
-        $status = $this->retailer
-            ->client()
-            ->checkAvailability($this);
-
-        $this->update([
-            'in_stock' => $status->available,
-            'price' => $status->price
-        ]);
-
-        $callback && $callback($this);
+        TrackStock::dispatch($this);
     }
 
     public function retailer()
