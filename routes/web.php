@@ -1,5 +1,8 @@
 <?php
 
+use App\Notifications\ImportantStockUpdate;
+use App\Stock;
+use App\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/mail-preview', function () {
+    $user = factory(User::class)->create();
+
+    return (new ImportantStockUpdate(Stock::first()))->toMail($user);
 });
